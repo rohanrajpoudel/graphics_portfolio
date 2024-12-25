@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 20%; /* Left and right spacing */
+  line-height: 1.6;
+  background-color: #635f5f;
+}
+
+/* Header Styles */
+header {
+  background-color: #bdb3b3;
+  color: white;
+  padding: 20px;
+}
+
+.user-info {
+  text-align: center; /* Center align the content */
+  margin-bottom: 20px; /* Add spacing below the user info */
+}
+
+.user-info img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto; /* Center image */
+}
+
+.user-info h1 {
+  font-size: 1.8em;
+  margin: 10px 0; /* Spacing around the name */
+}
+
+.user-info h1 a {
+  text-decoration: none; /* Remove underline */
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.user-info h1 a:hover {
+  color: #807e7e;
+  text-decoration: underline;
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center; /* Align icons in a row */
+  gap: 20px; /* Spacing between icons */
+}
+
+.social-links img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.2s ease;
+}
+
+.social-links a:hover img {
+  transform: scale(1.5); /* Enlarge icon on hover */
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+.shots-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px; /* Space between shot cards */
+}
+
+/* Shot Card Styles */
+.shot-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.shot-card img {
+  max-width: 100%; /* Fit image within the card */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  margin: 0 auto; /* Center image */
+}
+
+.shot-card h3 {
+  font-size: 1.5em;
+  color: black;
+  margin: 10px 0;
+}
+
+.shot-card-link {
+  text-decoration: none; /* Remove underline for links */
+  color: inherit; /* Inherit text color */
+  display: block; /* Ensure the link wraps the whole card */
+}
+
+.shot-card:hover {
+  transform: scale(1.2); /* Enlarge icon on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.shot-card:hover h3 {
+  text-decoration: underline; /* Underline text on hover */
+}
